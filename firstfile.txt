@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas page</title>
+</head>
+<style>
+    canvas{
+        border: 10px solid rgb(203, 236, 19);
+        box-decoration-break: slice;
+    }
+
+
+</style>
+<body>
+    <canvas id="mycanvas" width="600" height="200"></canvas>
+    <script>
+        var canvas=document.getElementById('mycanvas');
+        var ctx = canvas.getContext('2d');
+        //rectangle
+        ctx.fillStyle='#FF0000';
+        ctx.fillRect(50, 100, 80, 50);
+        // triangle
+        ctx.beginPath();
+        ctx.arc(300, 100, 50, 0, 2 * Math.PI);
+        
+        ctx.moveTo(500,50);
+        ctx.lineTo(350,150);
+        ctx.lineTo(350,150);
+        ctx.closePath();
+        ctx.fillStyle="skyblue";
+        ctx.fill();
+        // circle
+        ctx.beginPath();
+        ctx.arc(300, 100, 50, 0, 2 * Math.PI);
+        ctx.fillStyle='green';
+        ctx.fill();
+        ctx.closePath();
+        
+    </script>
+    
+</body>
+</html>
