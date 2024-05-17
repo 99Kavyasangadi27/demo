@@ -14,6 +14,7 @@
 
 </style>
 <body>
+    <h1> kavya Sangadi </h2>
     <canvas id="mycanvas" width="600" height="200"></canvas>
     <script>
         var canvas=document.getElementById('mycanvas');
